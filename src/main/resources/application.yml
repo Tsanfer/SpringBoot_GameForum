@@ -1,9 +1,12 @@
 spring:
   datasource:
-    username: root
-    password: 123456
+    # username: root
+    # password: 123456
+    username: root_temp
+    password: 95ESzHRXP4NlTZIw
     #?serverTimezone=UTC解决时区的报错
-    url: jdbc:mysql://localhost:3306/game?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    # url: jdbc:mysql://localhost:3306/game?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://rm-wz91t90t8hh87q2764o.rwlb.rds.aliyuncs.com:3306/spring_boot-game_forum?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
 
@@ -31,7 +34,8 @@ spring:
 
   servlet:
     multipart:
-      location: E:\辽工毕业设计\stuSpringBoot\springboot-03-webtest\src\main\resources\static
+      # location: E:\辽工毕业设计\stuSpringBoot\springboot-03-webtest\src\main\resources\static
+      location: /workspaces/SpringBoot_GameForum/src/main/resources/static
 
   #静态资源配置
 web:
